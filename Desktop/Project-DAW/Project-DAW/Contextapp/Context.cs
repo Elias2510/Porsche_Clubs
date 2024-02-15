@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project_DAW.Entities;
 
-namespace Project_DAW.Context
+namespace Project_DAW.Contextapp
 {
     public class Context : DbContext
     {

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using Project_DAW.Context;
 using Project_DAW.Entities;
 using Project_DAW.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Project_DAW.Contextapp;
 using System.Drawing;
 
 namespace Project_DAW.Controllers
@@ -12,9 +12,9 @@ namespace Project_DAW.Controllers
     [Route("[controller]")]
     public class BadgeController : ControllerBase
     {
-        private readonly TestContext _context;
+        private readonly Context _context;
         private readonly IMapper _mapper;
-        public BadgeController(TestContext Badge, IMapper mapper)
+        public BadgeController(Context Badge, IMapper mapper)
         {
             this._context = Badge;
             this._mapper = mapper;
@@ -22,8 +22,8 @@ namespace Project_DAW.Controllers
         [HttpGet("Badge")]
         public async Task<ActionResult<List<Badge>>> IndexAsync()
         {
-            var edituri = _context.Badge.ToList();
-            return edituri;
+            var badges = _context.Badge.ToList();
+            return badges;
         }
         [HttpGet("by/{id}")]
         public ActionResult<Badge> Detalii(int id)
