@@ -1,11 +1,22 @@
-﻿namespace Project_DAW.Entities
+﻿using System.Text.Json.Serialization;
+using System.Drawing;
+using System.Text.Json.Serialization;
+namespace Project_DAW.Entities
+
 {
+    //MM
     public class Fest
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Oras { get; set; }
+        public int id { get; set; }
 
-        public ICollection<Vehicul> Vehicule { get; } 
+        public string Model? model { get; set; }
+        public int model_id {  get; set; }
+
+        public Posesor? posesor {  get; set; }
+        public int posesor_id { get; set; }
+
+        
+
+        
     }
 }

@@ -32,3 +32,14 @@ C:\Users\User\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\refint\Project-DA
 C:\Users\User\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.pdb
 C:\Users\User\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.genruntimeconfig.cache
 C:\Users\User\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\ref\Project-DAW.dll
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.sourcelink.json
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.dll
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\refint\Project-DAW.dll
+C:\Users\User\Source\Repos\Porsche_Clubs\Desktop\Project-DAW\Project-DAW\obj\Debug\net7.0\Project-DAW.pdb
