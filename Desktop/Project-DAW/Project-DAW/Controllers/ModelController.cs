@@ -9,6 +9,7 @@ using Project_DAW.Contextapp;
 
 namespace Project_DAW.Controllers
 {
+
     [ApiController]
     [Route("[controller]")]
     public class ModelController : ControllerBase
@@ -23,12 +24,12 @@ namespace Project_DAW.Controllers
         [HttpGet("Modele")]
         public async Task<ActionResult<List<GetModelDTO>>> IndexAsync()
         {
-            var carti = _context.Model.Select(c => new GetModelDTO()
+            var modele = _context.Model.Select(c => new GetModelDTO()
             {
                 id = c.id,
                 denumire = c.denumire
             }).ToList();
-            return carti;
+            return modele;
         }
         [HttpGet("/{id}")]
         public ActionResult<Model> Detalii(int id)

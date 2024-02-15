@@ -8,7 +8,7 @@ namespace Project_DAW.Contextapp
         public DbSet<Posesor> Posesor {  get; set; }
         public DbSet<Model> Model {  get; set; }
         public DbSet<Fest> Fest { get; set; }
-        public DbSet<Badge> Badges { get; set; }
+        public DbSet<Badge> Badge { get; set; }
         public Context(DbContextOptions<Context> options) : base(options)
         {
 

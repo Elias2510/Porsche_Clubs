@@ -9,7 +9,7 @@ namespace Project_DAW.Entities
     {
         public int id { get; set; }
 
-        public string Model? model { get; set; }
+        public  Model?  model { get; set; }
         public int model_id {  get; set; }
 
         public Posesor? posesor {  get; set; }
