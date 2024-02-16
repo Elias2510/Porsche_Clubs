@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Source\\Repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj": {}
+    "C:\\Users\\User\\source\\repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Source\\Repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj": {
+    "C:\\Users\\User\\source\\repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj",
         "projectName": "Project-DAW",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\Project-DAW.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Porsche_Clubs\\Desktop\\Project-DAW\\Project-DAW\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
