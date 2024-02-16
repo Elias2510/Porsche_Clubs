@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Project-DAW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e518df844747448832010655a2ff41e713b8859b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22736a05f6a7fa854e02457cdf7daa87d70dcfcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project-DAW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Project-DAW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
