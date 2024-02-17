@@ -8,7 +8,7 @@ import { FestService } from '../services/fest.service';
 })
 export class FestComponent implements OnInit {
   fests: any[] = []; // Folosim un tip generic aici pentru a permite orice tip de date pentru evenimente
-
+  
   constructor(private festService: FestService) { }
 
   ngOnInit(): void {

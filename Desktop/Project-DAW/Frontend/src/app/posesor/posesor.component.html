@@ -1,9 +1,8 @@
-<div *ngFor="Lista posesorilor porsche">
+<div *ngFor="let posesor of posesori">
     <h2>{{ posesor.name }}</h2>
     <ul>
-      <li *ngFor="Badge-ul primit">
+      <li *ngFor="let badge of posesor.badges">
         {{ badge.name }}
       </li>
     </ul>
-  </div>
-  
+</div>

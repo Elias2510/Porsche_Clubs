@@ -1,3 +1,4 @@
+<!-- fest.component.html -->
 <table>
     <thead>
       <tr>
@@ -8,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="Porsche Fest">
+      <tr *ngFor="let fest of fests">
         <td>{{ fest.id }}</td>
         <td>{{ fest.model?.denumire }}</td>
         <td>{{ fest.posesor?.name }}</td>

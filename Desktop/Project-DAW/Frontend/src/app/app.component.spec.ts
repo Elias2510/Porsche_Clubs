@@ -1,29 +1,45 @@
-import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { Component, OnInit } from '@angular/core';
+import { PosesorService } from './services/posesor.service';
+import { BadgeService } from './services/badge.service';
+import { ModelService } from './services/model.service';
 
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent],
-    }).compileComponents();
-  });
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  posesori: any[] = [];
+  badges: any[] = [];
+  models: any[] = [];
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+  constructor(
+    private posesorService: PosesorService,
+    private badgeService: BadgeService,
+    private modelService: ModelService
+  ) {}
 
-  it(`should have the 'Frontend' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('Frontend');
-  });
+  ngOnInit(): void {
+    this.loadPosesori();
+    this.loadBadges();
+    this.loadModels();
+  }
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Frontend');
-  });
-});
+  loadPosesori() {
+    this.posesorService.getPosesori().subscribe(data => {
+      this.posesori = data;
+    });
+  }
+
+  loadBadges() {
+    this.badgeService.getBadges().subscribe(data => {
+      this.badges = data;
+    });
+  }
+
+  loadModels() {
+    this.modelService.getModels().subscribe(data => {
+      this.models = data;
+    });
+  }
+}

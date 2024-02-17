@@ -7,7 +7,8 @@ import { PosesorService } from '../services/posesor.service';
   styleUrls: ['./posesor.component.css']
 })
 export class PosesorComponent implements OnInit {
-  posesori: any[] = [];
+  posesori: any[] = []; // Adjust the type according to your actual model
+  
 
   constructor(private posesorService: PosesorService) { }
 
@@ -17,3 +18,4 @@ export class PosesorComponent implements OnInit {
     });
   }
 }
+
