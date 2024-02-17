@@ -9,8 +9,8 @@ export const routes: Routes = [
   { path: 'model', component: ModelComponent },
   { path: 'fest', component: FestComponent },
   { path: 'posesor', component: PosesorComponent },
-  { path: 'badge', component: BadgeComponent },
-  { path: '', redirectTo: '/fest', pathMatch: 'full' } 
+  { path: 'badge', component: BadgeComponent }
+ 
 ];
 
 @NgModule({

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PosesorService {
-  private apiUrl = 'http://adresa_api_backend/posesori'; // Adresa API
+  private apiUrl = 'https://localhost:7026/api/Posesor/Posesori'; // Adresa API
 
   constructor(private http: HttpClient) { }
 

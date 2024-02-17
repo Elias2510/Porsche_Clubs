@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FestService {
-  private apiUrl = 'http:///fests'; // Adresa API pentru evenimente
+  private apiUrl = ''; // Adresa API pentru evenimente
 
   constructor(private http: HttpClient) { }
 

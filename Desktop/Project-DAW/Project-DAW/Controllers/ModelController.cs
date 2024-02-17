@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿//using AutoMapper;
 using Project_DAW.Contextapp;
 using Project_DAW.Entities;
 using Project_DAW.Models;
@@ -15,11 +15,11 @@ namespace Project_DAW.Controllers
     public class ModelController : ControllerBase
     {
         private readonly Context _context;
-        private readonly IMapper _mapper;
-        public ModelController(Context Model, IMapper mapper)
+        //private readonly IMapper _mapper;
+        public ModelController(Context Model)
         {
             this._context = Model;
-            this._mapper = mapper;
+            
         }
         [HttpGet("Modele")]
         public async Task<ActionResult<List<GetModelDTO>>> IndexAsync()

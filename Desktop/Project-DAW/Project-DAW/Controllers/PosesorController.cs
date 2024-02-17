@@ -15,11 +15,11 @@ namespace Project_DAW.Controllers
     public class PosesorController : ControllerBase
     {
         private readonly Context _context;
-        private readonly IMapper _mapper;
-        public PosesorController(Context Posesor, IMapper mapper)
+        //private readonly IMapper _mapper;
+        public PosesorController(Context Posesor)
         {
             this._context = Posesor;
-            this._mapper = mapper;
+            //this._mapper = mapper;
         }
         [HttpGet("Posesori")]
         public async Task<ActionResult<List<Posesor>>> IndexAsync()

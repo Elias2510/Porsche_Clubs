@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿//using AutoMapper;
 using Project_DAW.Entities;
 using Project_DAW.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -13,11 +13,11 @@ namespace Project_DAW.Controllers
     public class BadgeController : ControllerBase
     {
         private readonly Context _context;
-        private readonly IMapper _mapper;
-        public BadgeController(Context Badge, IMapper mapper)
+        //private readonly IMapper _mapper;
+        public BadgeController(Context Badge)
         {
             this._context = Badge;
-            this._mapper = mapper;
+            
         }
         [HttpGet("Badge")]
         public async Task<ActionResult<List<Badge>>> IndexAsync()

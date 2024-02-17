@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BadgeService {
-  private baseUrl = 'http://localhost:7113/api/badges'; // Adresa de bază a API-ului badge
+  private baseUrl = 'https://localhost:7026/Badge/Badge'; // Adresa de bază a API-ului badge
 
   constructor(private http: HttpClient) { }
 
