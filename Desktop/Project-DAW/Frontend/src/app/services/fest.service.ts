@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class FestService {
-  private apiUrl = ''; // Adresa API pentru evenimente
+  private apiUrl = 'https://localhost:7026/Fest/Fests'; // Adresa API pentru evenimente
 
   constructor(private http: HttpClient) { }
 

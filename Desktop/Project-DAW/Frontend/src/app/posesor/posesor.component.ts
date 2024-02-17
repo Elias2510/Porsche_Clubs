@@ -3,6 +3,7 @@ import { PosesorService } from '../services/posesor.service';
 
 @Component({
   selector: 'app-posesor',
+  standalone: true,
   templateUrl: './posesor.component.html',
   styleUrls: ['./posesor.component.css']
 })

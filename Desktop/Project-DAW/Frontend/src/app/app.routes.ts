@@ -1,20 +1,17 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ModelComponent } from './model/model.component';
-import { FestComponent } from './fest/fest.component';
-import { PosesorComponent } from './posesor/posesor.component';
-import { BadgeComponent } from './badge/badge.component';
+// app.routes.ts
 
-export const routes: Routes = [
-  { path: 'model', component: ModelComponent },
-  { path: 'fest', component: FestComponent },
-  { path: 'posesor', component: PosesorComponent },
-  { path: 'badge', component: BadgeComponent }
- 
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component'; // Asigură-te că importă corect HomeComponent
+
+const routes: Routes = [
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule] // Elimină exportul lui HomeComponent din aici
 })
 export class AppRoutingModule { }
+
+export { routes }; // Exportă variabila 'routes' separat
