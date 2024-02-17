@@ -1,0 +1,34 @@
+/* Stilizare pentru HomeComponent */
+
+/* Stilizare pentru sectiunile de afisare a datelor */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Stilizare pentru fiecare element din lista modelelor */
+  .models-list li {
+    color: #555;
+  }
+  
+  /* Stilizare pentru imaginile modelelor */
+  .models-list img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Stilizare pentru sectiunea modelelor */
+  .models-section {
+    margin-top: 20px;
+  }
+  
