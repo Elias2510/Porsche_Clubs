@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { FestService } from '../services/fest.service';
 import { PosesorService } from '../services/posesor.service';
 import { ModelService } from '../services/model.service';
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgFor, NgIf } from '@angular/common';
+
 @Component({
   selector: 'app-home',
-  standalone: true,
+  standalone : true,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  imports: [NgFor, NgIf]
 })
 export class HomeComponent implements OnInit {
   fests: any[] = [];
   posesori: any[] = [];
   modele: any[] = [];
-
+  sunt_logat: boolean = false;
   constructor(
     private festService: FestService,
     private posesorService: PosesorService,
@@ -23,30 +23,42 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-   
-      this.loadFests();
-    };
+    this.loadFests();
+    this.loadPosesori();
+    this.loadModels();
+  }
 
-    loadFests(): void {
-        // Folosește serviciul FestService pentru a face cererea către backend
-        this.festService.getFests().subscribe(
-          (response: any) => {
-            // Dacă cererea este reușită, actualizează lista de festivități
-            this.fests = response; // presupunând că răspunsul conține un array de festivități
-          },
-          (error: any) => {
-            // În caz de eroare, poți trata eroarea aici (de exemplu, afișând un mesaj de eroare)
-            console.error('Eroare la încărcarea festivităților:', error);
-          }
-        );
+  loadFests(): void {
+    this.festService.getFests().subscribe(
+      (response: any) => {
+        this.fests = response;
+      },
+      (error: any) => {
+        console.error('Error loading festivals:', error);
+      }
+    );
+  }
+  
 
-    this.posesorService.getPosesori().subscribe(data => {
-      this.posesori = data;
-    });
+  loadPosesori(): void {
+    this.posesorService.getPosesori().subscribe(
+      (response: any) => {
+        this.posesori = response;
+      },
+      (error: any) => {
+        console.error('Eroare la încărcarea posesorilor:', error);
+      }
+    );
+  }
 
-    this.modelService.getModels().subscribe(data => {
-      this.modele = data;
-    });
-    
+  loadModels(): void {
+    this.modelService.getModels().subscribe(
+      (response: any) => {
+        this.modele = response;
+      },
+      (error: any) => {
+        console.error('Eroare la încărcarea modelelor:', error);
+      }
+    );
   }
 }

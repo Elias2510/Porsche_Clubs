@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModelService } from '../services/model.service';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-model',
   templateUrl: './model.component.html',
-  styleUrls: ['./model.component.css']
+  styleUrls: ['./model.component.css'],
+  imports: [NgFor, NgIf]
 })
 export class ModelComponent implements OnInit {
   models: any[] = [];

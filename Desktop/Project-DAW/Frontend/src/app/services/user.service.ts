@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private baseUrl = 'http://localhost:7113/api/users'; // Adresa de bază pentru API-ul utilizatorilor
+  private baseUrl = 'https://localhost:7026/api/User'; // Adresa de bază pentru API-ul utilizatorilor
 
   constructor(private http: HttpClient) { }
 

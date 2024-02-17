@@ -1,10 +1,23 @@
 using Project_DAW.Contextapp;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using AutoMapper;
+
+using System.Net.Http;
+using Microsoft.Extensions.DependencyInjection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddHttpClient("PostMan")
+    .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+    {
+        ServerCertificateCustomValidationCallback = (sender, certificate, chain, sslPolicyErrors) =>
+        {
+            // Always return true to ignore SSL certificate errors (for development/testing only)
+            return true;
+        }
+    });
 
 builder.Services.AddCors(options =>
 {
@@ -14,6 +27,7 @@ builder.Services.AddCors(options =>
             builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
         });
 });
+
 
 // Add services to the container.
 

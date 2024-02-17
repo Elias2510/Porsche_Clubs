@@ -1,15 +1,15 @@
 ﻿using Project_DAW.Contextapp;
 using Project_DAW.Models;
-using Project_DAW.Helpers;
-using Project_DAW.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Project_DAW.Controllers;
+using Project_DAW.Helpers;
 using System;
 using System.Net.Http;
+using Project_DAW.Entities;
 
-//user
 namespace Project_DAW.Controllers
 {
     [Route("api/[controller]")]
@@ -66,14 +66,14 @@ namespace Project_DAW.Controllers
         }
 
 
-        // GET: 
+        // GET: api/Food
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetAllUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
-        // GET: 
+        // GET: api/Food/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUserById(int id)
         {
@@ -82,7 +82,7 @@ namespace Project_DAW.Controllers
             return user;
         }
 
-        // PUT: 
+        // PUT: api/Food/5
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, User user)
         {
@@ -101,7 +101,7 @@ namespace Project_DAW.Controllers
             return NoContent();
         }
 
-        // DELETE: 
+        // DELETE: api/Food/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

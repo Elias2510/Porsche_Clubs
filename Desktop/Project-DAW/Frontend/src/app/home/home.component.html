@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porsche Club Romania</title>
-  <link rel="stylesheet" href="home.component.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Porsche Club Romania</h1>
-    
-    <div class="section" (click)="loadFests()">
-        <h2>Fests</h2>
+<div class="poza">
+    <div class="container">
+      <h1>Porsche Club Romania</h1>
+      
+      <div class="section" (click)="loadFests()">
+          <h2>Fests</h2>
+          <ul>
+            <li *ngFor="let fest of fests">{{ fest.id }} - {{ fest.model_id }}</li>
+          </ul>
+        </div>
+  
+      <div class="section">
+        <h2>Posesori</h2>
         <ul>
-          <li *ngFor="let fest of fests">{{ fest.id }} - {{ fest.name }}</li>
+          <!-- Afiseaza lista posesorilor -->
+          <li *ngFor="let posesor of posesori">{{ posesor.id }} - {{ posesor.name }}</li>
         </ul>
       </div>
-
-    <div class="section">
-      <h2>Posesori</h2>
-      <ul>
-        
-      </ul>
+  
+      <div class="section" (click)="loadModels()">
+        <h2>Modele</h2>
+        <ul>
+          <!-- Afiseaza lista modelelor -->
+          <li *ngFor="let model of modele">{{ model.id }} - {{ model.denumire }}</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="section">
-      <h2>Modele</h2>
-      <ul>
-        
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+</div>  
