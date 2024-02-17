@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Project-DAW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+017700340aedbf23fbb6f7f58dd9addbfa4c35aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60e22ba288c4e7a369d2d81efd8a30c4c6936736")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project-DAW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Project-DAW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

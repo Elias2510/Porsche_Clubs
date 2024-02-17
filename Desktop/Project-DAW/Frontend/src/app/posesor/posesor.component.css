@@ -1,0 +1,13 @@
+/* Stilizare pentru posesor și badge */
+h2 {
+    color: blue;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    font-weight: bold;
+  }
+  
