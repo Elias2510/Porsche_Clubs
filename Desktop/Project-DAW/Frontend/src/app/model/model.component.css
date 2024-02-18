@@ -1,25 +1,33 @@
+h3 {
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Ajustați înălțimea la necesitate */
+  text-align: center;
+  line-height: 200px; /* Ajustați în funcție de înălțime */
+  margin-bottom: 20px; /* Spațiere între elemente */
+  color: white;
+}
 
-h2 {
-    color: #333; 
-  }
-  
-  img {
-    max-width: 100%; 
-    height: auto; 
-    margin-bottom: 20px; 
-  }
-  
-  /* Stilizare pentru lista modelelor din club */
-  h2 {
-    margin-top: 40px; 
-  }
-  
-  ul {
-    list-style-type: none; 
-    padding: 0; 
-  }
-  
-  li {
-    margin-bottom: 10px; 
-  }
-  
+h3:nth-child(1) {
+  background-image: url('https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2023/Products/Panamera/Outdoor/0214_roma_gold_u-crane_AKOS8758_edit_V02.jpg/jcr:content/0214_roma_gold_u-crane_AKOS8758_edit_V02.jpg');
+}
+
+h3:nth-child(2) {
+  background-image: url('https://prestigeandperformancecar.com/wp-content/uploads/Porsche-992-Turbo-S-7.jpg');
+}
+
+h3:nth-child(3) {
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/718-style-edition-18-1667334774.jpg?crop=0.598xw:0.671xh;0.244xw,0.0841xh&resize=768:*');
+}
+
+h3:nth-child(4) {
+  background-image: url('https://www.topgear.com/sites/default/files/2023/10/1%20Porsche%20Cayenne%20Coupe.jpg');
+}
+
+h3:nth-child(5) {
+  background-image: url('https://www.motortrend.com/uploads/2022/02/2023-Porsche-Macan-T-3.jpg');
+}
+
+h3:nth-child(6) {
+  background-image: url('https://ev-database.org/img/auto/Porsche_Taycan_Turbo_S/Porsche_Taycan_Turbo_S-01@2x.jpg');
+}

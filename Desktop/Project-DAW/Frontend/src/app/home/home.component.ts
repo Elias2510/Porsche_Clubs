@@ -3,13 +3,14 @@ import { FestService } from '../services/fest.service';
 import { PosesorService } from '../services/posesor.service';
 import { ModelService } from '../services/model.service';
 import { NgFor, NgIf } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone : true,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [NgFor, NgIf]
+  imports: [NgFor, NgIf,RouterModule]
 })
 export class HomeComponent implements OnInit {
   fests: any[] = [];

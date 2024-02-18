@@ -4,6 +4,7 @@ import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-fest',
+  standalone: true,
   templateUrl: './fest.component.html',
   styleUrls: ['./fest.component.css'],
   imports: [NgFor, NgIf]

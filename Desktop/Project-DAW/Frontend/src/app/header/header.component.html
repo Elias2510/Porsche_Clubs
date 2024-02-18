@@ -1,0 +1,14 @@
+<header>
+    <div class="container">
+      <a routerLink="/" class="logo">Porsche_Club_Romania</a>
+      <nav>
+        <ul>
+          <li class="log" *ngIf="!isLoggedIn()"><a routerLink="/login-page">Login</a></li>
+          <li class="log" *ngIf="isLoggedIn()">
+            <a href="" (click)="logout()">Logout</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>

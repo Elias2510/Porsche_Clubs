@@ -1,28 +1,20 @@
-<div *ngFor="let model of models">
-    <h2>{{ model.denumire }}</h2>
-   <!-- <img [src]="getImageUrl(model.denumire)" alt="{{ model.denumire }}"> -->
-  </div>
-  
-  <div>
-    <h3>Panamera</h3>
-    <!--  imaginea pentru Panamera -->
-    <h3>911</h3>
-    <!-- imaginea pentru 911 -->
-    <h3>718</h3>
-    <!--  imaginea pentru 718 -->
-    <h3>Cayenne</h3>
-    <!--  imaginea pentru Cayenne -->
-    <h3>Macan</h3>
-    <!--imaginea pentru Macan -->
-    <h3>Taycan</h3>
-    <!--  imaginea pentru Taycan -->
-  </div>
-  
-  <div>
-    <h2>Modelele din club</h2>
-    <ul>
-      <!-- Afisati lista modelelor din club -->
-      <li *ngFor="let model of models">{{ model.denumire }}</li>
-    </ul>
-  </div>
+<div>
+  <h3>Panamera</h3>
+  <h3>911</h3>
+  <h3>718</h3>
+  <h3>Cayenne</h3>
+  <h3>Macan</h3>
+  <h3>Taycan</h3>
+</div>
+
+<div>
+  <h2>Modelele din club</h2>
+  <ul>
+    <li *ngFor="let model of models">
+      
+      {{ model.denumire }}
+    </li>
+  </ul>
+</div>
+
   

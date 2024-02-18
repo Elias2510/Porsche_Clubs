@@ -4,6 +4,7 @@ import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-model',
+  standalone : true,
   templateUrl: './model.component.html',
   styleUrls: ['./model.component.css'],
   imports: [NgFor, NgIf]

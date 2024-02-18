@@ -1,20 +1,34 @@
-<!-- fest.component.html -->
-<table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Model</th>
-        <th>Posesor</th>
-        <!-- Alte anteturi pentru coloanele suplimentare -->
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let fest of fests">
-        <td>{{ fest.id }}</td>
-        <td>{{ fest.model?.denumire }}</td>
-        <td>{{ fest.posesor?.name }}</td>
-        <!-- Alte celule pentru coloanele suplimentare -->
-      </tr>
-    </tbody>
-  </table>
-  
+<div class="container">
+  <div class="info-container">
+    
+    <h3>Our Badges</h3>
+    <ul class="badge-list">
+      <li>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/013/195/638/small/premium-quality-badge-with-blue-and-gold-color-png.png" alt="Gold Badge">
+        Gold
+      </li>
+      <li>
+        <img src="https://p1.hiclipart.com/preview/851/256/876/cartoon-gold-medal-silver-medal-bronze-medal-trophy-circle-logo-badge-mirror-png-clipart.jpg" alt="Silver Badge">
+        Silver
+      </li>
+      <li>
+        <img src="https://www.clipartmax.com/png/middle/360-3601982_bronze-badge-number-one-sales-rep.png" alt="Bronze Badge">
+        Bronze
+      </li>
+      <li>
+        <img src="https://e7.pngegg.com/pngimages/938/674/png-clipart-badge-logo-red-badge-blue-label.png" alt="Advanced Badge">
+        Advanced
+      </li>
+      <li>
+        <img src="https://png.pngtree.com/png-vector/20220530/ourmid/pngtree-creative-green-badge-png-png-image_4764813.png" alt="Enthusiast Badge">
+        Enthusiast
+      </li>
+    </ul>
+  </div>
+  <div class="image-container">
+    <!-- Adăugați aici imaginea generală -->
+    
+    <h3>Poza noastră</h3>
+    <img src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_690x388/dam/pnr/2022/Scene-Passion/Porsche-Clubs/Dr-Wolfgang-Porsche-has-carried-the-tradition-of-attending-Porsche-rallies.jpeg/jcr:content/Dr%20Wolfgang%20Porsche%20has%20carried%20the%20tradition%20of%20attending%20Porsche%20rallies.jpeg" alt="Poza noastră">
+  </div>
+</div>

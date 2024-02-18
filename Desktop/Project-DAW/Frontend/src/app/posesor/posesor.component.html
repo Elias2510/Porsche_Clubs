@@ -1,8 +1,16 @@
-<div *ngFor="let posesor of posesori">
-    <h2>{{ posesor.name }}</h2>
-    <ul>
-      <li *ngFor="let badge of posesor.badges">
-        {{ badge.name }}
-      </li>
-    </ul>
+<div class="container">
+  <div class="image-container">
+    <!-- Adăugați aici imaginea cu toți posesorii -->
+    <img src="https://files.porsche.com/filestore/image/multimedia/none/sportandevents-porscheclubs-slideshow-05/normal/a4061a22-00f4-11e8-bbc5-0019999cd470/porsche-normal.jpg" alt="Imagine posesor">
+  </div>
+  <div class="info-container">
+    <div *ngFor="let posesor of posesori">
+      <h2>{{ posesor.name }}</h2>
+      <ul>
+        <li *ngFor="let badge of posesor.badges">
+          {{ badge.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

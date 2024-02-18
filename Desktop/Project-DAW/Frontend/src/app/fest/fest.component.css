@@ -1,25 +1,38 @@
-/* Stilizare pentru tabel */
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  /* Stilizare antet tabel */
-  th {
-    background-color: #f2f2f2;
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  /* Stilizare celule tabel */
-  td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-  }
-  
-  /* Stilizare alternare culori rânduri */
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
+/* Stilizare pentru posesor și badge */
+.container {
+  display: flex;
+}
+
+.info-container {
+  flex: 1;
+  font-family: Arial, sans-serif; /* sau alt font preferat */
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.badge-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.badge-list li {
+  margin-bottom: 10px;
+}
+
+.badge-list img {
+  width: 50px; /* Ajustați dimensiunea imaginii după necesitate */
+  height: auto;
+}
