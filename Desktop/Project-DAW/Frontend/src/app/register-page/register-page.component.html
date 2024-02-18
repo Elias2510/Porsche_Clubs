@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="details">
+      <form [formGroup]="registerForm" (ngSubmit)="submit()">
+        <div class="login-container">
+            <h2>Register</h2>
+            <div class="input-group">
+              <label for="username">Username:</label>
+              <input formControlName="username" type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input formControlName="email" type="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="input-group">
+              <label for="password">Password:</label>
+              <input formControlName="password" type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="input-group">
+              <label for="confirmPassword">Confirm Password:</label>
+              <input formControlName="confirmPassword" type="password" id="confirmPassword" placeholder="Confirm password">
+            </div>
+            <button type="submit" class="login-button">Register</button>
+        </div>
+      </form>
+      <div class="register">
+        Already have an account? &nbsp;
+        <a routerLink="/login-page">Login here</a>
+      </div>
+    </div>
+  </div>
