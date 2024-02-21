@@ -24,41 +24,41 @@ namespace Project_DAW.Controllers
         [HttpGet("Posesori")]
         public async Task<ActionResult<List<Posesor>>> IndexAsync()
         {
-            var autori = _context.Posesor.ToList();
-            return autori;
+            var posesori = _context.Posesor.ToList();
+            return posesori;
         }
         [HttpGet("{id}")]
         public ActionResult<Posesor> Detalii(int id)
         {
-            var autor = _context.Posesor.Find(id);
-            if (autor == null)
+            var posesor = _context.Posesor.Find(id);
+            if (posesor == null)
                 return NotFound();
             else
-                return autor;
+                return posesor;
         }
         [HttpPost]
         public async Task<IActionResult> Post(PostPosesorDTO a)
         {
-            var autor = new Posesor()
+            var posesor = new Posesor()
             {
                 name = a.name,
                 badge_id = a.badge_id
             };
-            _context.Add(autor);
+            _context.Add(posesor);
             await _context.SaveChangesAsync();
             return Ok();
         }
         [HttpPut]
-        public async Task<IActionResult> Put(int id, PostPosesorDTO autor)
+        public async Task<IActionResult> Put(int id, PostPosesorDTO posesor)
         {
-            if (autor == null || id == 0)
+            if (posesor == null || id == 0)
                 return BadRequest();
 
-            var _autor = await _context.Posesor.FirstOrDefaultAsync(a => a.id == id);
-            if (_autor == null)
+            var _posesor = await _context.Posesor.FirstOrDefaultAsync(a => a.id == id);
+            if (_posesor == null)
                 return NotFound();
-            _autor.name = autor.name;
-            _autor.badge_id = autor.badge_id;
+            _posesor.name = posesor.name;
+            _posesor.badge_id = posesor.badge_id;
             await _context.SaveChangesAsync();
             return Ok();
         }

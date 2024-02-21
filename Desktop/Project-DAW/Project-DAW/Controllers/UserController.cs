@@ -66,14 +66,14 @@ namespace Project_DAW.Controllers
         }
 
 
-        // GET: api/Food
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetAllUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Food/5
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUserById(int id)
         {
@@ -82,7 +82,7 @@ namespace Project_DAW.Controllers
             return user;
         }
 
-        // PUT: api/Food/5
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, User user)
         {
@@ -101,7 +101,6 @@ namespace Project_DAW.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Food/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
