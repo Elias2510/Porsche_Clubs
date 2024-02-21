@@ -1,10 +1,10 @@
 h3 {
   background-size: cover;
   background-position: center;
-  height: 200px; /* Ajustați înălțimea la necesitate */
+  height: 200px; 
   text-align: center;
-  line-height: 200px; /* Ajustați în funcție de înălțime */
-  margin-bottom: 20px; /* Spațiere între elemente */
+  line-height: 200px; 
+  margin-bottom: 20px; 
   color: white;
 }
 

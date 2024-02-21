@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ModelService {
-  private baseUrl = 'https://localhost:7026/Model/Modele'; // Adresa de bază pentru API-ul modelelor
+  private baseUrl = 'https://localhost:7026/Model/Modele'; 
 
   constructor(private http: HttpClient) { }
 

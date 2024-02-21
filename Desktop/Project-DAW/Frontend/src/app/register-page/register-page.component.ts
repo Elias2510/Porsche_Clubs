@@ -51,11 +51,11 @@ export class RegisterPageComponent implements OnInit {
     if (this.registerForm.valid) {
       this.userService.register(this.registerForm.value).subscribe({
         next: (response) => {
-          // Handle the response, possibly navigating to a login or success page
+          
           this.router.navigate(['/login-page']);
         },
         error: (error) => {
-          // Handle errors, such as displaying a message
+          
           console.error('Registration failed', error);
         }
       });

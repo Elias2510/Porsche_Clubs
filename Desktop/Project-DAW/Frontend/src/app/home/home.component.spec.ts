@@ -22,5 +22,5 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Adăugați alte teste aici în funcție de necesități
+
 });

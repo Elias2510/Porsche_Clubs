@@ -2,7 +2,7 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component'; // Asigură-te că importă corect HomeComponent
+import { HomeComponent } from './home/home.component'; 
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { FestComponent } from './fest/fest.component';
@@ -20,8 +20,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), HomeComponent],
-  exports: [RouterModule] // Elimină exportul lui HomeComponent din aici
+  exports: [RouterModule] 
 })
 export class AppRoutingModule { }
 
-export { routes }; // Exportă variabila 'routes' separat
+export { routes }; 
